@@ -2,7 +2,7 @@ defaultTasks 'clean', 'build', 'test', 'jar'
 
 allprojects {
 
-    def major = 3, minor = 4, patch = 0, versionType = "SNAPSHOT"
+    def major = 1, minor = 0, patch = 0, versionType = "ALPHA"
 
     group 'de.dytanic.cloudnet'
     version "$major.$minor.$patch-$versionType"
@@ -55,7 +55,7 @@ allprojects {
 
     project.ext {
 
-        cloudNetCodeName = 'Earthquake'
+        cloudNetCodeName = 'Origin'
 
         //Dependencies
         dependencyGuavaVersion = '30.1-jre'

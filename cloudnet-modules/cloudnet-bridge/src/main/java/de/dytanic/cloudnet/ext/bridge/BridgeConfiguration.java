@@ -28,7 +28,8 @@ public final class BridgeConfiguration extends BasicJsonDocPropertyable {
     public static final Type TYPE = new TypeToken<BridgeConfiguration>() {
     }.getType();
 
-    private String prefix = "&7Cloud &8| &b";
+    private String prefix = "&6Appolon &8| &6";
+    private String broadcastPrefix = "&cBroadcast &8| &7";
 
     private boolean onlyProxyProtection = true;
 
@@ -76,6 +77,14 @@ public final class BridgeConfiguration extends BasicJsonDocPropertyable {
 
     public void setPrefix(String prefix) {
         this.prefix = prefix;
+    }
+
+    public String getBroadcastPrefix() {
+        return broadcastPrefix;
+    }
+
+    public void setBroadcastPrefix(String broadcastPrefix) {
+        this.broadcastPrefix = broadcastPrefix;
     }
 
     public boolean isOnlyProxyProtection() {

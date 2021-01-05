@@ -13,7 +13,7 @@ import java.util.List;
 public final class CommandMe extends CommandDefault {
 
     public CommandMe() {
-        super("me", "cloud", "cloudnet");
+        super("me", "cloud", "appolon");
     }
 
     @Override
@@ -23,9 +23,9 @@ public final class CommandMe extends CommandDefault {
 
         List<String> messages = new ArrayList<>(Arrays.asList(
                 " ",
-                "CloudNet " + CommandMe.class.getPackage().getImplementationTitle()
-                        + " " + CommandMe.class.getPackage().getImplementationVersion() + " by Dytanic & the CloudNet Community",
-                "Discord: https://discord.gg/CPCWr7w",
+                "Appolon " + CommandMe.class.getPackage().getImplementationTitle()
+                        + " " + CommandMe.class.getPackage().getImplementationVersion() + " by InTroubleDE Development",
+                "Discord: https://discord.gg/HHKwAhx",
                 " ",
                 "ClusterId: " + this.getCloudNet().getConfig().getClusterConfig().getClusterId(),
                 "NodeId: " + this.getCloudNet().getConfig().getIdentity().getUniqueId(),
