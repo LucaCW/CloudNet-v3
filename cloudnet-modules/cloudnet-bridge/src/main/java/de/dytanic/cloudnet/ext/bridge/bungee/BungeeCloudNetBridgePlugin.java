@@ -7,7 +7,7 @@ import de.dytanic.cloudnet.ext.bridge.BridgeConfigurationProvider;
 import de.dytanic.cloudnet.ext.bridge.BridgeHelper;
 import de.dytanic.cloudnet.ext.bridge.BridgePlayerManager;
 import de.dytanic.cloudnet.ext.bridge.bungee.command.CommandBroadcast;
-import de.dytanic.cloudnet.ext.bridge.bungee.command.CommandAppolon;
+import de.dytanic.cloudnet.ext.bridge.bungee.command.CommandApollon;
 import de.dytanic.cloudnet.ext.bridge.bungee.command.CommandHub;
 import de.dytanic.cloudnet.ext.bridge.bungee.listener.BungeeCloudNetListener;
 import de.dytanic.cloudnet.ext.bridge.bungee.listener.BungeePlayerExecutorListener;
@@ -79,7 +79,7 @@ public final class BungeeCloudNetBridgePlugin extends Plugin {
     }
 
     private void registerCommands() {
-        ProxyServer.getInstance().getPluginManager().registerCommand(this, new CommandAppolon());
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new CommandApollon());
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new CommandBroadcast());
 
         Collection<String> hubCommandNames = BridgeConfigurationProvider.load().getHubCommandNames();

@@ -13,7 +13,7 @@ import java.util.List;
 public final class CommandMe extends CommandDefault {
 
     public CommandMe() {
-        super("me", "cloud", "appolon");
+        super("me", "cloud", "apollon");
     }
 
     @Override
@@ -23,7 +23,7 @@ public final class CommandMe extends CommandDefault {
 
         List<String> messages = new ArrayList<>(Arrays.asList(
                 " ",
-                "Appolon " + CommandMe.class.getPackage().getImplementationTitle()
+                "Apollon " + CommandMe.class.getPackage().getImplementationTitle()
                         + " " + CommandMe.class.getPackage().getImplementationVersion() + " by InTroubleDE Development",
                 "Discord: https://discord.gg/HHKwAhx",
                 " ",

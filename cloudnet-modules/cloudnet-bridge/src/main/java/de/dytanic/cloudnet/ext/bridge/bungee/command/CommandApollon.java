@@ -15,16 +15,16 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-public final class CommandAppolon extends Command implements TabExecutor {
+public final class CommandApollon extends Command implements TabExecutor {
 
-    public CommandAppolon() {
-        super("appolon", "cloudnet.command.cloudnet", "cloud", "cl");
+    public CommandApollon() {
+        super("apollon", "cloudnet.command.cloudnet", "cloud", "cl");
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length == 0) {
-            sender.sendMessage(TextComponent.fromLegacyText(ChatColor.translateAlternateColorCodes('&', BridgeConfigurationProvider.load().getPrefix()) + "/appolon <command>"));
+            sender.sendMessage(TextComponent.fromLegacyText(ChatColor.translateAlternateColorCodes('&', BridgeConfigurationProvider.load().getPrefix()) + "/apollon <command>"));
             return;
         }
 
